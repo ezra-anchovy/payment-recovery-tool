@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Payment Attempt</title>
+</head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #f9fafb; margin: 0; padding: 20px;">
+    <div style="max-width: 600px; margin: 0 auto; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        
+        <!-- Header -->
+        <div style="background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%); padding: 40px 30px; text-align: center;">
+            <h1 style="color: white; margin: 0; font-size: 24px;">🚨 Final Payment Notice</h1>
+        </div>
+        
+        <!-- Content -->
+        <div style="padding: 40px 30px;">
+            <p style="font-size: 16px; color: #374151; line-height: 1.6;">
+                Hi {{customer_name}},
+            </p>
+            
+            <p style="font-size: 16px; color: #374151; line-height: 1.6;">
+                This is our final attempt to process your payment of <strong>{{amount}}</strong>. 
+                After multiple attempts, we've been unable to complete the transaction.
+            </p>
+            
+            <div style="background: #fee2e2; border-left: 4px solid #ef4444; padding: 20px; margin: 30px 0; border-radius: 8px;">
+                <p style="margin: 0 0 10px 0; color: #991b1b; font-size: 14px;">
+                    <strong>⚠️ Important:</strong>
+                </p>
+                <ul style="margin: 0; padding-left: 20px; color: #991b1b; font-size: 14px;">
+                    <li>This is our last automatic retry attempt</li>
+                    <li>Your service may be suspended if payment fails</li>
+                    <li>Please update your payment method immediately</li>
+                </ul>
+            </div>
+            
+            <p style="font-size: 16px; color: #374151; line-height: 1.6;">
+                We value you as a customer and don't want you to lose access to your account. 
+                Please take action now to ensure uninterrupted service.
+            </p>
+            
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="#" style="background: #ef4444; color: white; padding: 14px 28px; text-decoration: none; border-radius: 8px; font-weight: 600; display: inline-block;">
+                    Update Payment Now
+                </a>
+            </div>
+            
+            <p style="font-size: 14px; color: #6b7280; margin-top: 30px;">
+                If you're experiencing difficulties, please contact our support team immediately - we're here to help!
+            </p>
+            
+            <p style="font-size: 16px; color: #374151; margin-top: 30px;">
+                Best regards,<br>
+                The Team
+            </p>
+        </div>
+        
+        <!-- Footer -->
+        <div style="background: #f3f4f6; padding: 20px 30px; text-align: center;">
+            <p style="font-size: 12px; color: #9ca3af; margin: 0;">
+                This is the final attempt ({{attempt}} of 4). Please update your payment method to avoid service interruption.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

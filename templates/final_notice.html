@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Failed - Action Required</title>
+</head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #f9fafb; margin: 0; padding: 20px;">
+    <div style="max-width: 600px; margin: 0 auto; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        
+        <!-- Header -->
+        <div style="background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); padding: 40px 30px; text-align: center;">
+            <h1 style="color: white; margin: 0; font-size: 24px;">❌ Payment Failed - Manual Action Required</h1>
+        </div>
+        
+        <!-- Content -->
+        <div style="padding: 40px 30px;">
+            <p style="font-size: 16px; color: #374151; line-height: 1.6;">
+                Hi {{customer_name}},
+            </p>
+            
+            <p style="font-size: 16px; color: #374151; line-height: 1.6;">
+                After multiple attempts over the past week, we were unable to process your payment 
+                of <strong>{{amount}}</strong>. Automatic retries have now been exhausted.
+            </p>
+            
+            <div style="background: #fee2e2; border-left: 4px solid #dc2626; padding: 20px; margin: 30px 0; border-radius: 8px;">
+                <p style="margin: 0 0 10px 0; color: #7f1d1d; font-size: 14px;">
+                    <strong>What happens next:</strong>
+                </p>
+                <ul style="margin: 0; padding-left: 20px; color: #7f1d1d; font-size: 14px;">
+                    <li>Your subscription may be suspended or cancelled</li>
+                    <li>You may lose access to premium features</li>
+                    <li>Manual payment is required to restore service</li>
+                </ul>
+            </div>
+            
+            <p style="font-size: 16px; color: #374151; line-height: 1.6;">
+                We'd love to keep you as a customer! Please log in to your account and update your 
+                payment method to continue enjoying our services.
+            </p>
+            
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="#" style="background: #dc2626; color: white; padding: 14px 28px; text-decoration: none; border-radius: 8px; font-weight: 600; display: inline-block;">
+                    Log In & Update Payment
+                </a>
+            </div>
+            
+            <div style="background: #f3f4f6; padding: 20px; margin: 30px 0; border-radius: 8px; text-align: center;">
+                <p style="margin: 0 0 10px 0; color: #374151; font-size: 14px;">
+                    <strong>Need help?</strong> Our support team is standing by to assist you.
+                </p>
+                <p style="margin: 0; color: #6b7280; font-size: 14px;">
+                    Email: support@example.com | Phone: 1-800-XXX-XXXX
+                </p>
+            </div>
+            
+            <p style="font-size: 16px; color: #374151; margin-top: 30px;">
+                We hope to see you back soon!<br>
+                The Team
+            </p>
+        </div>
+        
+        <!-- Footer -->
+        <div style="background: #f3f4f6; padding: 20px 30px; text-align: center;">
+            <p style="font-size: 12px; color: #9ca3af; margin: 0;">
+                All automatic retry attempts have been completed. Please update your payment method manually.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
