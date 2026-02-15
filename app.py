@@ -313,7 +313,8 @@ def api_stats():
 @app.route('/', methods=['GET'])
 def landing():
     """Landing page."""
-    return render_template_string(open('templates/landing.html').read())
+    with open('templates/landing.html', 'r') as f:
+        return f.read()
 
 
 @app.route('/health', methods=['GET'])
@@ -335,4 +336,5 @@ if __name__ == '__main__':
     print(f"Health:    http://localhost:5000/health")
     print("=" * 50)
     
-    app.run(port=5000, debug=True)
+    port = int(os.environ.get('PORT', 5001))
+    app.run(host='0.0.0.0', port=port, debug=True)
