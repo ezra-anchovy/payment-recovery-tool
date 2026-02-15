@@ -4,7 +4,9 @@
 
 A production-ready Flask application that detects failed Stripe payments and automatically retries them using smart scheduling and customer email outreach. Stop losing revenue to expired cards and temporary payment failures.
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/payment-recovery)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/github?template=https://github.com/ezra-anchovy/payment-recovery-tool)
+
+📚 **[Quick Start](QUICKSTART.md)** | **[Full Deployment Guide](DEPLOYMENT.md)**
 
 ## 🚀 Quick Deploy
 
